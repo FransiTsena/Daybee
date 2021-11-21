@@ -1,6 +1,5 @@
 
-<h2 style="text-align: center;"><b>PRIVACY POLICY</b></h2>
-<p>Effective date: 2023-01-01</p>
+<h2 style="text-align: center;"><b>PRIVACY POLICY</b></h2>>
 <p>1. <b>Introduction</b></p>
 <p>Welcome to <b> DaybeeLLC</b>.</p>
 <p><b>DaybeeLLC</b> (“us”, “we”, or “our”) operates <b>com.oma</b> (hereinafter referred to as <b>“Service”</b>).</p>
