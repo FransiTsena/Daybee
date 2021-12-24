@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Start your own business for free with Daybee student plan and make your own E-commerce app in Ethiopia">
+  <meta name="title" content="Daybee - Free Business">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Daybee">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo.png"/>
+
+  <title>Daybee</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+  <script>
+        var firebaseConfig = {
+              apiKey: "AIzaSyCEjsnAR21zwJiXaJcMUXJES6o2l5h9caU",
+              authDomain: "daybee-ltd.firebaseapp.com",
+              projectId: "daybee-ltd",
+              storageBucket: "daybee-ltd.appspot.com",
+              messagingSenderId: "18385536281",
+              appId: "1:18385536281:web:afa0f9ca13a86cb8c23188",
+              measurementId: "G-0FY5VB47ND"
+            };
+
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=564088363');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
