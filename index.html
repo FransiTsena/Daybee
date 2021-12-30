@@ -1,108 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base href="/">
-  <meta property="og:type" content="Amii">
-  <meta property="og:url" content="https://amii.edu.et">
-  <meta property="og:title" content="Amii - Education Consultant">
-  <meta property="og:description" content="Education consultant service and application for Ethiopia student  looking to study in Canada, Australia, China, Poland, Canada, Russia, Turkey">
-  <meta property="og:image" content="https://firebasestorage.googleapis.com/v0/b/oma-store-9fcb3.appspot.com/o/amii%2Ffacebook.jpg?alt=media&token=3f719cf5-9528-467a-abd5-d4601da4826f">
-
-  <title>Amii - Education Consultant</title>
-  <meta name="title" content="Amii - Education Consultant">
-  <meta name="description" content="Education consultant service and application for Ethiopia student  looking to study in Canada, Australia, China, Poland, Canada, Russia, Turkey">
+  <base href="/Daybee/">
   <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Start your own business for free with Daybee student plan and make your own E-commerce app in Ethiopia">
+  <meta name="title" content="Daybee - Free Business">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="amii">
-  <link rel="apple-touch-icon" href="icons/logo512.png">
+  <meta name="apple-mobile-web-app-title" content="Daybee">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="logo.png"/>
+
+  <title>Daybee</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
-<script>
-      const firebaseConfig = {
-          apiKey: "AIzaSyCvfHgGzBUiuUO1zVzcHjjlSkFbXWPkyZs",
-          authDomain: "amii-edu.firebaseapp.com",
-          projectId: "amii-edu",
-          storageBucket: "amii-edu.appspot.com",
-          messagingSenderId: "174963690075",
-          appId: "1:174963690075:web:7c57829031e4d5731bcd7e",
-          measurementId: "G-EVQLDLQ0C2"
-        };
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
 
-      firebase.initializeApp(firebaseConfig);
-    </script>
   <script>
-    var serviceWorkerVersion = '1102703441';
-    var scriptLoaded = false;
-    function loadMainDartJs() {
-      if (scriptLoaded) {
-        return;
-      }
-      scriptLoaded = true;
-      var scriptTag = document.createElement('script');
-      scriptTag.src = 'main.dart.js';
-      scriptTag.type = 'application/javascript';
-      document.body.append(scriptTag);
-    }
+        var firebaseConfig = {
+              apiKey: "AIzaSyCEjsnAR21zwJiXaJcMUXJES6o2l5h9caU",
+              authDomain: "daybee-ltd.firebaseapp.com",
+              projectId: "daybee-ltd",
+              storageBucket: "daybee-ltd.appspot.com",
+              messagingSenderId: "18385536281",
+              appId: "1:18385536281:web:afa0f9ca13a86cb8c23188",
+              measurementId: "G-0FY5VB47ND"
+            };
 
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
+  <script>
     if ('serviceWorker' in navigator) {
-      // Service workers are supported. Use them.
-      window.addEventListener('load', function () {
-        // Wait for registration to finish before dropping the <script> tag.
-        // Otherwise, the browser will load the script multiple times,
-        // potentially different versions.
-        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
-        navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            function waitForActivation(serviceWorker) {
-              serviceWorker.addEventListener('statechange', () => {
-                if (serviceWorker.state == 'activated') {
-                  console.log('Installed new service worker.');
-                  loadMainDartJs();
-                }
-              });
-            }
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              waitForActivation(reg.installing || reg.waiting);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.log('New service worker available.');
-              reg.update();
-              waitForActivation(reg.installing);
-            } else {
-              // Existing service worker is still good.
-              console.log('Loading app from service worker.');
-              loadMainDartJs();
-            }
-          });
-
-        // If service worker doesn't succeed in a reasonable amount of time,
-        // fallback to plaint <script> tag.
-        setTimeout(() => {
-          if (!scriptLoaded) {
-            console.warn(
-              'Failed to load app from service worker. Falling back to plain <script> tag.',
-            );
-            loadMainDartJs();
-          }
-        }, 4000);
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3728022824');
       });
-    } else {
-      // Service workers not supported. Just drop the <script> tag.
-      loadMainDartJs();
     }
   </script>
+  <script src="main.dart.js" type="application/javascript"></script>
+
+
+  <style type="text/css">
+  #logo {
+    position : absolute;
+    bottom : 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+</style>
+  <style type="text/css">
+  #load {
+    position : absolute;
+    bottom : 50%;
+    left : 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+</style>
+  <center>
+    <img src="logo.png" alt="Daybee logo" width="100" height="100" id="logo">
+  </center>
+
+  <style type="text/css">
+{
+  padding: 0;
+  margin: 0;
+}
+.loader>span {
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: #FF0037FF;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 5px;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dot-1 {
+  animation: anim 1s linear 0s infinite;
+}
+.dot-2 {
+  animation: anim 1s linear 0.25s infinite;
+}
+.dot-3 {
+  animation: anim 1s linear 0.50s infinite;
+}
+.dot-4 {
+  animation: anim 1s linear 0.75s infinite;
+}
+@keyframes anim {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0;
+  }
+}
+</style>
+  <div class="loader-outer" id="load">
+    <div class="loader">
+      <span class="dot dot-1"></span>
+      <span class="dot dot-2"></span>
+      <span class="dot dot-3"></span>
+      <span class="dot dot-4"></span>
+    </div>
+  </div>
+
 </body>
+
+<footer>
+  <style type="text/css">
+    #footer {
+      position : absolute;
+      bottom : 0;
+      left: 50%;
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      height : 40px;
+      margin-top : 40px;
+      font-size: medium;
+    }
+  </style>
+  <center>
+    <h2 id="footer">Free professional business ideas and provide support from the beginning  to your succession</h2>
+  </center>
+
+</footer>
+
 </html>
