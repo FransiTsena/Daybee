@@ -33872,7 +33872,7 @@ $.m7=!1},
 $S:0}
 A.GR.prototype={
 I(a,b){var s=null
-return new A.wq(new A.dP(s),"Daybee - Free Business",A.ajN(A.amu(s,s,s,s,s,B.j,s,s,s,s,s,s,s,s,s,s,s),s,"sans",B.j),!1,s)}}
+return new A.wq(new A.dP(s),"Daybee - Free Business Consultancy",A.ajN(A.amu(s,s,s,s,s,B.j,s,s,s,s,s,s,s,s,s,s,s),s,"sans",B.j),!1,s)}}
 A.dO.prototype={
 gaL(a){return this.a.b},
 k(a,b){var s,r
